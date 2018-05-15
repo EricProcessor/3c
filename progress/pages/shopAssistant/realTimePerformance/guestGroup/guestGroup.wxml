@@ -63,10 +63,56 @@
             </view>
           </view>
       </view>
-      <view class='progresscount'>
-          <view class='promale'></view>
-          <view class='profamale'></view>
-      </view>  
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
    </view>
 </view>  
   

@@ -6,7 +6,7 @@ Page({
    */
   data: {
     navbar: ['客群', '关注度', '业绩','排名'],
-    currentTab: 0 ,
+    currentTab: 1 ,
     dateOpt: ['日','周','月'],
     currentDate: 0, 
   },
