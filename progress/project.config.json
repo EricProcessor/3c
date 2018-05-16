@@ -37,6 +37,12 @@
 					"name": "实时",
 					"pathName": "pages/shopAssistant/realTimePerformance/guestGroup/guestGroup",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dateplugin",
+					"pathName": "pages/pubulish/template/datePlugin/datePlugin",
+					"query": ""
 				}
 			]
 		}

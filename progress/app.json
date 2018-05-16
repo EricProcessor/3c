@@ -12,7 +12,8 @@
     "pages/data/SexRatio/SexRatio",
     "pages/data/ProductStatis/ProductStatis",
     "pages/data/CustomerStatis/CustomerStatis",
-    "pages/shopAssistant/realTimePerformance/guestGroup/guestGroup"
+    "pages/shopAssistant/realTimePerformance/guestGroup/guestGroup",
+    "pages/pubulish/template/datePlugin/datePlugin"
   ],
   "window": {
     "backgroundTextStyle": "light",
