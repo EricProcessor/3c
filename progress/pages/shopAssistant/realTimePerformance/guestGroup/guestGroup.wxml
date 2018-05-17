@@ -131,12 +131,141 @@
         <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
     </view>
   </view>
-  <view></view>
+  <view class='followBox'>
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+  </view>
 </view>  
   
 <!--业绩-->  
-<view hidden="{{currentTab!==2}}">  
-  tab_03  
+<view class='shopContent' hidden="{{currentTab!==2}}">  
+  <view class="dateOpt">
+    <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
+  </view> 
 </view> 
 
 <!--排名-->  

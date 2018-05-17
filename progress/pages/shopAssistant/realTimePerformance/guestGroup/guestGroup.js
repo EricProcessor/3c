@@ -6,7 +6,7 @@ Page({
    */
   data: {
     navbar: ['客群', '关注度', '业绩','排名'],
-    currentTab: 1 ,
+    currentTab: 2 ,
     dateOpt: ['日','周','月'],
     currentDate: 0, 
     // 下拉框

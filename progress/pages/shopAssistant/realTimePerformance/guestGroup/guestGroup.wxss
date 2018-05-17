@@ -176,19 +176,19 @@ page{
   background-color: #5a79ff;
 }
 /*堆叠统计图  */
-.progresscount,.profamale,.promale{
+.agecontent .progresscount,.profamale,.promale{
   height: 20px;
 }
-.progresscount{
+.agecontent .progresscount{
   width: 100%;
   background-color: #f4f4f4;
   display: flex;
 }
-.promale{
+.agecontent .promale{
   width: 40%;
   background-color: #7b94ff;
 }
-.profamale{
+.agecontent .profamale{
   width: 43%;
   background-color: #ff7b7b;
 }
@@ -251,4 +251,63 @@ page{
   font-size: 34rpx;
   /* border-bottom: 1px solid #efefef; */
   padding: 10rpx;
+}
+.followCont{
+  display: flex;
+  border: 1px solid #f0f0f0;
+  flex-direction:column;
+  border-radius: 4px;
+   padding: 0 20rpx; 
+}
+.followCont .title text{
+  background-color: #f0f0f0;
+  margin-left: 40rpx;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  padding: 10rpx 20rpx;
+}
+.followCont text{
+  font-size: 30rpx;
+}
+.followCont .followNum{
+  display: flex;
+  justify-content: flex-end;
+  padding: 5rpx 20rpx;
+  margin-bottom: 20rpx;
+}
+.followCont .followTime text{
+  color: #424242;
+}
+.followBox .progresscount,.profamale,.promale{
+  height: 20px;
+}
+.followBox .progresscount{
+  width: 100%;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.followBox .promale{
+  width: 40%;
+  background-color: #7b94ff;
+}
+.followBox .profamale{
+  width: 60%;
+  background-color: #ff7b7b;
+}
+.followBox .Proportion{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.echartsBox{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+box-sizing:border-box;
 }
