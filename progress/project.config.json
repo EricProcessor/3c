@@ -43,6 +43,12 @@
 					"name": "dateplugin",
 					"pathName": "pages/pubulish/template/datePlugin/datePlugin",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "demo",
+					"pathName": "pages/shopAssistant/realTimePerformance/demo/demo",
+					"query": ""
 				}
 			]
 		}

@@ -1,3 +1,63 @@
+import * as echarts from '../../../../ec-canvas/echarts';
+function initChart(canvas, width, height) {
+  const chart = echarts.init(canvas, null, {
+    width: width,
+    height: height
+  });
+  canvas.setChart(chart);
+
+  var option = {
+    backgroundColor: "#fff",
+    color: ["#ff1f1f", "#5a79ff"],
+
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['普客', '会员']
+    },
+    grid: {
+      containLabel: true
+    },
+
+    xAxis: {
+      name:"单位:天",
+      nameGap:30,
+      nameLocation:"center",
+      type: 'category',
+      boundaryGap: false,
+      data: ['0', '4', '8', '12', '16', '20', '24','28'],
+      axisTick:{
+        show:false
+      }
+    },
+    yAxis: {
+      x: 'center',
+      type: 'value',
+      splitLine:{
+        show:false
+      },
+      axisTick: {
+        show: false
+      }
+    },
+    series: [{
+      name: '普客',
+      type: 'line',
+      smooth: false,
+      data: [18, 36, 65, 30, 78, 40, 33]
+    }, {
+      name: '会员',
+      type: 'line',
+      smooth: false,
+      data: [12, 50, 51, 35, 70, 30, 20]
+    }
+    ]
+  };
+
+  chart.setOption(option);
+  return chart;
+}
 // pages/shopAssistant/realTimePerformance/guestGroup/guestGroup.js
 Page({
 
@@ -9,10 +69,15 @@ Page({
     currentTab: 2 ,
     dateOpt: ['日','周','月'],
     currentDate: 0, 
-    // 下拉框
-    show: false,//控制下拉列表的显示隐藏，false隐藏、true显示
-    selectData: ['按照关注人数排序', '按照关注总时长排序'],//下拉列表的数据
-    index: 0//选择的下拉列表下标
+    /*下拉框  控制下拉列表的显示隐藏，false隐藏、true显示*/
+    show: false,
+    /*下拉列表的数据*/
+    selectData: ['按照关注人数排序', '按照关注总时长排序'],
+    /*选择的下拉列表下标 */
+    index: 0,
+    ec: {
+      onInit: initChart
+    }
   },
   // 点击下拉显示框
   selectTap() {

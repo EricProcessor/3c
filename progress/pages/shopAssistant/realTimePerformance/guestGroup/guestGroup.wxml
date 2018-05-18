@@ -265,7 +265,12 @@
 <view class='shopContent' hidden="{{currentTab!==2}}">  
   <view class="dateOpt">
     <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
-  </view> 
+  </view>
+  <view class='echatBox'>
+    <view class="ccontainer">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+    </view> 
+  </view>
 </view> 
 
 <!--排名-->  

@@ -13,7 +13,8 @@
     "pages/data/ProductStatis/ProductStatis",
     "pages/data/CustomerStatis/CustomerStatis",
     "pages/shopAssistant/realTimePerformance/guestGroup/guestGroup",
-    "pages/pubulish/template/datePlugin/datePlugin"
+    "pages/pubulish/template/datePlugin/datePlugin",
+    "pages/shopAssistant/realTimePerformance/demo/demo"
   ],
   "window": {
     "backgroundTextStyle": "light",
