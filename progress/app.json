@@ -14,7 +14,8 @@
     "pages/data/CustomerStatis/CustomerStatis",
     "pages/shopAssistant/realTimePerformance/guestGroup/guestGroup",
     "pages/pubulish/template/datePlugin/datePlugin",
-    "pages/shopAssistant/realTimePerformance/demo/demo"
+    "pages/shopAssistant/realTimePerformance/demo/demo",
+    "pages/shopAssistant/memberMange/memberMange"
   ],
   "window": {
     "backgroundTextStyle": "light",

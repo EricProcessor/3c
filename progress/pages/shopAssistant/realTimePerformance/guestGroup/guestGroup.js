@@ -32,6 +32,8 @@ function initChart(canvas, width, height) {
       }
     },
     yAxis: {
+      name:"单位：%",
+      nameGap: 30,
       x: 'center',
       type: 'value',
       splitLine:{
@@ -45,7 +47,7 @@ function initChart(canvas, width, height) {
       name: '普客',
       type: 'line',
       smooth: false,
-      data: [18, 36, 65, 30, 78, 40, 33]
+      data: [18, 36, 65, 30, 78, 40, 33,100]
     }, {
       name: '会员',
       type: 'line',
@@ -66,7 +68,7 @@ Page({
    */
   data: {
     navbar: ['客群', '关注度', '业绩','排名'],
-    currentTab: 2 ,
+    currentTab: 0 ,
     dateOpt: ['日','周','月'],
     currentDate: 0, 
     /*下拉框  控制下拉列表的显示隐藏，false隐藏、true显示*/
@@ -77,7 +79,16 @@ Page({
     index: 0,
     ec: {
       onInit: initChart
-    }
+    },
+    // 表格数据
+    listData: [
+      { "name": "京东之家万达店", "guest": "2", "member": "3","price":"4","order":"1","sale":"1" },
+      { "name": "京东之家万达店", "guest": "2", "member": "3","price":"4","order":"1","sale":"1" },
+      { "name": "京东之家万达店", "guest": "2", "member": "3","price":"4","order":"1","sale":"1" },
+      { "name": "京东店", "guest": "2", "member": "3","price":"4","order":"1","sale":"1" },
+      { "name": "京东之家万达店", "guest": "2", "member": "3","price":"4","order":"1","sale":"1" },
+      { "name": "京东之家万达店", "guest": "2", "member": "3","price":"4","order":"1","sale":"1" }
+    ]
   },
   // 点击下拉显示框
   selectTap() {
@@ -102,6 +113,11 @@ Page({
     this.setData({
       currentDate: e.currentTarget.dataset.idx
     })
+  },
+  memberTab:function(){
+     wx.navigateTo({
+       url: '../../memberMange/memberMange',
+     })   
   },
   /**
    * 生命周期函数--监听页面加载

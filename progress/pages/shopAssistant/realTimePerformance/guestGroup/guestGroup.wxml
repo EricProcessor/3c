@@ -267,15 +267,74 @@
     <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
   </view>
   <view class='echatBox'>
+    <text>订单转换率</text>
     <view class="ccontainer">
-  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+    </view> 
+  </view>
+  <view class='echatBox'>
+    <text>月销售额</text>
+    <view class="ccontainer">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
     </view> 
   </view>
 </view> 
 
 <!--排名-->  
-<view hidden="{{currentTab!==3}}">  
-  tab_04  
+<view class='shopContent' hidden="{{currentTab!==3}}">  
+  <view class="dateOpt">
+    <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
+  </view>
+  <view class='ranking'>
+      <text>我的店铺排名</text>
+      <scroll-view  scroll-x class="scroll-header">
+          <view class="table">
+            <view class="thead">
+              <view class="th">店铺名</view>
+              <view class="th">客流量</view>
+              <view class="th ">会员量</view>
+              <view class="th ">客单价</view>
+              <view class="th ">订单转化率</view>
+              <view class="th ">销售额</view>
+            </view>
+            <block wx:for="{{listData}}" wx:key="{{code}}">
+              <view class="tr">
+                <view class="td">{{item.name}}</view>
+                <view class="td">{{item.guest}}</view>
+                <view class="td">{{item.member}}</view>
+                <view class="td">{{item.price}}</view>
+                <view class="td">{{item.order}}</view>
+                <view class="td">{{item.sale}}</view>
+              </view>
+            </block>
+          </view>
+      </scroll-view>
+  </view>
+  <view class='ranking'>
+      <text>店铺排名</text>
+      <scroll-view  scroll-x class="scroll-header">
+          <view class="table">
+            <view class="thead">
+              <view class="th">店铺名</view>
+              <view class="th">客流量</view>
+              <view class="th ">会员量</view>
+              <view class="th ">客单价</view>
+              <view class="th ">订单转化率</view>
+              <view class="th ">销售额</view>
+            </view>
+            <block wx:for="{{listData}}" wx:key="{{code}}">
+              <view class="tr">
+                <view class="td">{{item.name}}</view>
+                <view class="td">{{item.guest}}</view>
+                <view class="td">{{item.member}}</view>
+                <view class="td">{{item.price}}</view>
+                <view class="td">{{item.order}}</view>
+                <view class="td">{{item.sale}}</view>
+              </view>
+            </block>
+          </view>
+      </scroll-view>
+  </view>
 </view> 
 <!-- 底部导航 -->
 <view class='bottomnav'>
@@ -283,7 +342,7 @@
         <image src='/img/realtimesel.png'></image>
         <text class='active'>实时业绩</text>
     </view>
-    <view class='item'>
+    <view class='item' bindtap='memberTab'>
         <image src='/img/member.png'></image>
         <text>会员管理</text>
     </view>

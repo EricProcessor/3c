@@ -315,7 +315,7 @@ box-sizing:border-box;
 .ccontainer {
   position: absolute;
   display: flex;
-  height: 100%;
+  height:85%;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -329,8 +329,47 @@ ec-canvas {
 .echatBox{
  position: relative;
  width: 100%;
- height: 600rpx;
+ height:580rpx;
  border: 1px solid #f0f0f0;
  border-radius: 4px;
  margin-top: 40rpx;
+ padding-top: 20rpx;
+ margin-bottom: 20rpx;
+}
+.echatBox text{
+  padding-left: 20rpx
+}
+.ranking{
+  margin-top: 40rpx;
+}
+.scroll-header{
+display: flex;
+white-space: nowrap;
+}
+.table {
+  margin-top: 30rpx;
+}
+.tr {
+  width: 130%;
+  
+}
+.thead{
+  width: 130%;
+  border-bottom: 1px solid #f0f0f0;
+  
+}
+.td {
+    width:40%;
+    display: inline-block;
+    line-height: 3rem;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 34rpx;
+}
+.th {
+  width: 40%;
+  display: inline-block;
+  line-height: 3rem;
+  background-color: #f0f0f0;
+  color: #9da9bb;
+  font-size: 34rpx;
 }
